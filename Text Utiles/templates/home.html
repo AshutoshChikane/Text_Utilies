@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT-UTILS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="alert alert-success" role="alert">
+        Please enter your Text below with <strong> actions</strong> required
+    </div>
+    <div class="container">
+
+        <h1 class="display-3">Welcome To Text Utilis</h1>
+        <p>Please enter text below to analyse the text! </p>
+        <form action="/analyse" method="get">
+
+            <div class="input-group">
+                <span class="input-group-text">Enter text</span>
+                <textarea name="text" class="form-control" aria-label="With textarea"
+                    style="max-width: 500px; min-height: 110px;"></textarea>
+            </div>
+
+
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" name="punc" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Do you wish to remove all Punctuations
+                    ?</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" name="cap" type="checkbox" id="flexSwitchCheckChecked2" S>
+                <label class="form-check-label" for="flexSwitchCheckChecked2">Do you wish to capitalized all Text
+                    ?</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" name="dspace" type="checkbox" id="flexSwitchCheckChecked3">
+                <label class="form-check-label" for="flexSwitchCheckChecked3">Do you wish to remove all extra spacing
+                    Text
+                    ?</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" name="line" type="checkbox" id="flexSwitchCheckChecked4">
+                <label class="form-check-label" for="flexSwitchCheckChecked4">Do you want to remove new line?</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

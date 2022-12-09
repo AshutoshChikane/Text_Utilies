@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="alert alert-success" role="alert">
+        The Task is completed <strong> Successfully</strong>
+    </div>
+    <div class="container">
+        <div class="p-3 mb-2 bg-secondary text-white">
+            <h2>
+                <div>Condition given:
+                </div>
+                <div>{{condition}} </div>
+
+            </h2>
+        </div>
+        <pre>
+            <div class="text-bg-success p-3"><h3>Your Analyzed Text:{{result}}</h3></div>
+            
+        </pre>
+        <div class="result">
+
+        </div>
+
+        <button class="btn btn-primary"><a href="/"> HOME </a></button>
+    </div>
+
+
+</body>
+
+</html>
